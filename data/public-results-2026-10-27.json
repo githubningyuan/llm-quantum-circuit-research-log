@@ -1,0 +1,38 @@
+{
+  "status": "preliminary_public_research_note",
+  "public_note_version": "0.3",
+  "snapshot_date": "2026-10-27",
+  "timezone": "Asia/Taipei",
+  "task": "coulomb-potential",
+  "baseline": {
+    "toffoli_count": 6355,
+    "peak_qubits": 252,
+    "tq": 1601460
+  },
+  "independent_experiment": {
+    "best_original_evaluator_passed_candidate": {
+      "toffoli_count": 2197,
+      "peak_qubits": 205,
+      "tq": 450385,
+      "original_evaluator_reported_valid": true,
+      "source_and_result_snapshot_preserved": true,
+      "additional_rerun_complete": false,
+      "imported_to_evolution_database": false,
+      "candidate_source_public": false,
+      "evaluator_log_public": false,
+      "publicly_reproducible": false
+    },
+    "last_confirmed_database_best_tq": 559493,
+    "improvement_factor_vs_baseline": 3.555758,
+    "tq_reduction_pct_vs_baseline": 71.8766
+  },
+  "original_paper": {
+    "toffoli_count": 1140,
+    "peak_qubits": 142,
+    "tq": 161880
+  },
+  "reference_tasks_explored": 1,
+  "reference_tasks_total": 8,
+  "reference_url": "https://arxiv.org/abs/2610.22367",
+  "evidence_notice": "The result is from dated private experimental records. Evaluation checks are not formal proof, and this public note does not include the candidate source, evaluation logs, or reproducibility environment. Additional rerun and database import are pending."
+}
