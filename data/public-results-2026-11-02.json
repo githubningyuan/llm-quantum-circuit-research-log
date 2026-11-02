@@ -1,0 +1,73 @@
+{
+  "schema": "public-research-note-2026-11-02-v0.4",
+  "snapshot_date": "2026-11-02",
+  "research_status": "preliminary_one_benchmark",
+  "benchmark": "coulomb-potential",
+  "benchmark_baseline": {
+    "toffoli": 6355,
+    "peak_qubits": 252,
+    "tq": 1601460
+  },
+  "reference_paper": {
+    "best_tq": 161880,
+    "url": "https://arxiv.org/abs/2610.22367"
+  },
+  "independent_experiment": {
+    "publicly_reported_best_tq": 346035,
+    "best_program_source_public": false,
+    "best_program_tq_factors_exported": false,
+    "source": "private VM audit and dated research handoff",
+    "baseline_improvement_factor": 4.628029,
+    "baseline_tq_reduction_percent": 78.3925,
+    "experimental_treatment_database": {
+      "programs": 117,
+      "best_tq": 346035,
+      "read_only_preflight": "PASS"
+    },
+    "unchanged_production_database": {
+      "programs": 79,
+      "best_tq": 348775
+    }
+  },
+  "exploratory_comparison": {
+    "caveats": [
+      "Only five rounds per arm; first parent matched but later parents sampled independently",
+      "Configurations differed in multiple undisclosed ways; no component-wise ablation",
+      "Retained candidates are not independent sessions",
+      "Exploratory results do not establish causality, statistical significance or cost efficiency"
+    ],
+    "configuration_a": {
+      "rounds": 5,
+      "retained_sha_unique_new_candidates": 9,
+      "best_new_candidate_tq": 415529,
+      "final_database_best_tq": 348775,
+      "final_database_programs": 88
+    },
+    "configuration_b": {
+      "rounds": 5,
+      "retained_sha_unique_new_candidates": 38,
+      "best_new_candidate_tq": 346035,
+      "final_database_best_tq": 346035,
+      "final_database_programs": 117
+    }
+  },
+  "billing_snapshot": {
+    "date": "2026-11-02",
+    "currency": "USD",
+    "google_cloud_net_usage_pre_tax": 96.0,
+    "google_cloud_tax_shown": 5.0,
+    "deepseek_cumulative": 17.15,
+    "combined_including_shown_tax": 118.15,
+    "estimated_idle_gcp_range": [
+      15,
+      20
+    ],
+    "note": "Total account charges include development and VM idle time, not measured pure search computation cost"
+  },
+  "limitations": [
+    "Only Coulomb of eight tasks studied",
+    "No formal correctness proof",
+    "Latest candidate full source and evaluator artifacts not in public package",
+    "Implementation and detailed search policy withheld pending mature research disclosure"
+  ]
+}
