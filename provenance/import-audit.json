@@ -1,0 +1,21 @@
+{
+  "manifest_files_verified": {
+    "hhl": 763,
+    "coulomb": 1837
+  },
+  "original_export_zip_sha256": {
+    "hhl": "4a03559f064b01de3b52510db6f05c226b6763729566947509ea4bc6ef6d2bc5",
+    "coulomb": "1bcbc544f266c6b60ce41a3c3380a5e60ee3d9bf1ccc14b1730a0efaebe4c0f3"
+  },
+  "hhl_source_ops_record_checks": 37,
+  "hhl_legacy_seeds": 2,
+  "coulomb_unique_programs": 126,
+  "coulomb_archive_rows": 284,
+  "shared_uncompute_modules": 25,
+  "shared_eval_cli_identical": true,
+  "limitations": [
+    "Original filesystem ownership cannot be re-verified from ZIP. HHL binding is controller correlation of Broker and Evaluator records, not a cryptographic attestation from the evaluator.",
+    "Coulomb receipt verification is source-hash and recorded metrics, not an original ops hash.",
+    "Native VM service recreation and paid reruns not tested."
+  ]
+}

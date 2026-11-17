@@ -1,0 +1,16 @@
+{
+  "schema": "coulomb-ab-experiment-v1",
+  "status": "local_artifacts_prepared; not deployed, not paid-run",
+  "starting_state": {
+    "historical_sessions": 39,
+    "production_db_count": 79,
+    "production_db_best_tq": 348775,
+    "production_best_sha256": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b"
+  },
+  "target_rounds": 10,
+  "control": {"rounds": 5, "prompt_overlay": false, "db": "db-control", "controller": "original-deployed-v62-capfix-v2"},
+  "treatment": {"rounds": 5, "prompt_overlay": true, "db": "db-treatment", "controller": "cloned-v62-with-prompt-only-hook", "planner": "deterministic static retrieval; no added planner API"},
+  "must_hold": ["no concurrent OpenCode run", "all native VM checks pass", "both trial DBs cloned before either run", "no production DB writes", "only original evaluator validates", "original worktree SHA protected", "no automatic recovery", "no unattended paid-run"],
+  "evaluation": ["verified offspring per round", "best and median parent-relative TQ progress", "global best TQ", "inspiration selection and actual code transfer evidence", "API cost or token usage", "failure modes and run length"],
+  "limitations": ["five per arm exploratory only", "treatment adds prompt tokens", "no complete historical OpenCode error transcripts", "not all DB79 source exported in audit"]
+}

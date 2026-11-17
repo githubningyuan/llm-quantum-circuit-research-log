@@ -1,0 +1,16 @@
+# Prevent accidental inclusion of experiment environments and sensitive files
+.env
+.env.*
+*.key
+*.pem
+__pycache__/
+*.pyc
+*.zip
+*.tar.gz
+runs/
+logs/
+secrets/
+credentials/
+private/
+.tmp/
+.DS_Store

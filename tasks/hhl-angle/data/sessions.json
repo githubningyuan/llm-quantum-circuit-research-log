@@ -1,0 +1,189 @@
+[
+  {
+    "step": 1,
+    "record": "step-001",
+    "family": "LINEAGE_GEN1",
+    "parent_id": "4532fd3faad9c889e25efb3e0366c0564875565b5b7646de22f478191419c47e",
+    "child_generation": 2,
+    "admitted": 0,
+    "native_events": 1,
+    "model_calls": 1,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 2,
+    "record": "step-002",
+    "family": "LINEAGE_GEN1",
+    "parent_id": "4532fd3faad9c889e25efb3e0366c0564875565b5b7646de22f478191419c47e",
+    "child_generation": 2,
+    "admitted": 0,
+    "native_events": 1,
+    "model_calls": 1,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 3,
+    "record": "step-003",
+    "family": "INDEPENDENT_A",
+    "parent_id": null,
+    "child_generation": 0,
+    "admitted": 0,
+    "native_events": 0,
+    "model_calls": 1,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 4,
+    "record": "step-004",
+    "family": "INDEPENDENT_B",
+    "parent_id": null,
+    "child_generation": 0,
+    "admitted": 0,
+    "native_events": 0,
+    "model_calls": 1,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 5,
+    "record": "step-005",
+    "family": "LINEAGE_GEN1",
+    "parent_id": "4532fd3faad9c889e25efb3e0366c0564875565b5b7646de22f478191419c47e",
+    "child_generation": 2,
+    "admitted": 0,
+    "native_events": 1,
+    "model_calls": 1,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 6,
+    "record": "step-006-retry-3e548b",
+    "family": "LINEAGE_GEN1",
+    "parent_id": "4532fd3faad9c889e25efb3e0366c0564875565b5b7646de22f478191419c47e",
+    "child_generation": 2,
+    "admitted": 0,
+    "native_events": 4,
+    "model_calls": 3,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 7,
+    "record": "step-007",
+    "family": "INDEPENDENT_A",
+    "parent_id": null,
+    "child_generation": 0,
+    "admitted": 6,
+    "native_events": 6,
+    "model_calls": 5,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 8,
+    "record": "step-008",
+    "family": "INDEPENDENT_B",
+    "parent_id": null,
+    "child_generation": 0,
+    "admitted": 4,
+    "native_events": 5,
+    "model_calls": 4,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 9,
+    "record": "step-009",
+    "family": "INDEPENDENT_B",
+    "parent_id": "5a18bd13e92e670b9db3318cdf70ec16b09e4c76db52f130e01af76a63fb4827",
+    "child_generation": 1,
+    "admitted": 3,
+    "native_events": 5,
+    "model_calls": 3,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 10,
+    "record": "step-010",
+    "family": "INDEPENDENT_A",
+    "parent_id": "a292d38e1efce1374d8504433197c994f50ca85443b632a739fa261df2a5b90a",
+    "child_generation": 1,
+    "admitted": 7,
+    "native_events": 8,
+    "model_calls": 7,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 11,
+    "record": "step-011",
+    "family": "INDEPENDENT_B",
+    "parent_id": "931bf94d819c0c5326fb3cb7a402d88c10af8e5a2005557135fce3abdb8b17f9",
+    "child_generation": 2,
+    "admitted": 3,
+    "native_events": 5,
+    "model_calls": 7,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 12,
+    "record": "step-012",
+    "family": "INDEPENDENT_A",
+    "parent_id": "4a5950e8d911c43566929ed1d51cd5f90720eda958111095329eea1a525c9e0c",
+    "child_generation": 2,
+    "admitted": 7,
+    "native_events": 12,
+    "model_calls": 6,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 13,
+    "record": "step-013",
+    "family": "LINEAGE_GEN1",
+    "parent_id": "4532fd3faad9c889e25efb3e0366c0564875565b5b7646de22f478191419c47e",
+    "child_generation": 2,
+    "admitted": 0,
+    "native_events": 4,
+    "model_calls": 2,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 14,
+    "record": "step-014",
+    "family": "INDEPENDENT_B",
+    "parent_id": "6f1bdd70aaf004210cf0b40c53e36742845a863312b2f72da29d39ad31359f53",
+    "child_generation": 3,
+    "admitted": 1,
+    "native_events": 7,
+    "model_calls": 4,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 15,
+    "record": "step-015",
+    "family": "INDEPENDENT_A",
+    "parent_id": "98a621dfaa4a298873822f28494c6017e98e4687c30fcf8c9b977b285d3642ad",
+    "child_generation": 3,
+    "admitted": 1,
+    "native_events": 3,
+    "model_calls": 4,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 16,
+    "record": "step-016",
+    "family": "INDEPENDENT_B",
+    "parent_id": "c1c20f91e1c7f896ef3bc3c85e51dc21792fea96045d1365e32373aa7a623290",
+    "child_generation": 4,
+    "admitted": 3,
+    "native_events": 4,
+    "model_calls": 3,
+    "status": "time_budget_exhausted"
+  },
+  {
+    "step": 17,
+    "record": "step-017",
+    "family": "INDEPENDENT_A",
+    "parent_id": "ae8c395572985d7ee53ead83a731844662fd376280b08c1f0c456a80009ab43b",
+    "child_generation": 4,
+    "admitted": 2,
+    "native_events": 3,
+    "model_calls": 2,
+    "status": "time_budget_exhausted"
+  }
+]

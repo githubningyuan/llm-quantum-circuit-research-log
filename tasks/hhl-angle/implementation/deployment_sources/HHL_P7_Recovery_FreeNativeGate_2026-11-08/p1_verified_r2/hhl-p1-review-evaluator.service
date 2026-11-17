@@ -1,0 +1,31 @@
+[Unit]
+Description=HHL P1 isolated native evaluator (temporary review only)
+Requires=hhl-p1-review-evaluator.socket
+After=hhl-p1-review-evaluator.socket
+[Service]
+Type=simple
+User=hhl-eval
+Group=hhl-eval
+WorkingDirectory=/
+UMask=0077
+ExecStart=/usr/bin/python3 -I -B /run/hhl-task2/p1-review-code/eval/socket_service.py
+Restart=no
+KillMode=control-group
+TimeoutStopSec=15
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/srv/hhl-task2/p1-review-evaluator-spool
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+PrivateNetwork=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+LockPersonality=yes
+MemoryMax=1536M
+TasksMax=64
+CPUQuota=200%
+LimitNOFILE=256
+Environment=PYTHONDONTWRITEBYTECODE=1

@@ -1,7 +1,3 @@
-# Rights and reuse notice
+# Rights and reuse
 
-This repository is a **public research note, not an open-source implementation release**.
-
-No open-source license is granted for original text, figures, or unpublished implementation materials. All rights are reserved by their respective rights holders, except where applicable law or separate licenses permit otherwise. The original paper, tools, and evaluator are subject to their own terms, linked in [REFERENCES.md](REFERENCES.md).
-
-This notice is not a restriction on referring to factual results, citing the project, or discussing the independent experiment. Do not infer that unpublished agent prompts, orchestration code, or circuit implementations are included or available for reuse.
+The independent experiment follows the original paper and uses uncompute. The exported upstream LICENSE is Apache License 2.0, preserved at `LICENSES/Apache-2.0-uncompute.txt`. Upstream copyright and notices, including original task and framework source, remain with their rights holders. The bundled task sources and candidate derivatives retain their existing terms; original contributions must not be assumed to be licensed under a new permissive license. No additional license is granted by this packaging step. Prior public notes retain their own rights notice. Original analysis, orchestration code, model-generated candidates, and figures require the repository owner's authorization before public distribution; no upstream endorsement is implied. The owner should review licensing before pushing this release. Original private exports are not included and should never be uploaded to the public repository.

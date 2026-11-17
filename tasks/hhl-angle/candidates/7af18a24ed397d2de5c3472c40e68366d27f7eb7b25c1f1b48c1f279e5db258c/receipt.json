@@ -1,0 +1,37 @@
+{
+  "admission": {
+    "Q": 197,
+    "T": 3341,
+    "TQ": 658177,
+    "broker_run_id": "8541c61edf794421aa3c45260862798a",
+    "db_admission": "NATIVE_OPENEVOLVE_SAVE_RELOAD_OK",
+    "event_id": "a0f5fbe09ccb4c11ae68dd44acef149a",
+    "ops_sha256": "34765ea733225bb32e3475101097d2155b82b915d9db999f869792589141863c",
+    "source_bound": true,
+    "source_bundle_sha256": "7af18a24ed397d2de5c3472c40e68366d27f7eb7b25c1f1b48c1f279e5db258c",
+    "status": "SOURCE_BOUND_NATIVE_OK",
+    "verdict": "OK"
+  },
+  "native_result": {
+    "h_ops": "34765ea733225bb32e3475101097d2155b82b915d9db999f869792589141863c",
+    "qubits": 197,
+    "shots": 8742,
+    "submitted_sha256": "34765ea733225bb32e3475101097d2155b82b915d9db999f869792589141863c",
+    "task": "hhl-angle",
+    "toffoli": 3341.0,
+    "tq_cost": 658177,
+    "valid": true,
+    "verdict": "OK"
+  },
+  "broker_run_id": "8541c61edf794421aa3c45260862798a",
+  "source_captured_at_broker_execution": true,
+  "broker_binding_status": "NOT_ESTABLISHED",
+  "evaluator_binding_status": "UNVERIFIED_BROKER_CLAIM",
+  "source_claim": {
+    "broker_artifact": "candidate.ops",
+    "broker_run_id": "8541c61edf794421aa3c45260862798a",
+    "ops_sha256": "34765ea733225bb32e3475101097d2155b82b915d9db999f869792589141863c"
+  },
+  "broker_record_sha256": "9f4f1b9f0d32a0791b06bdbb9668ca7b58b46a832c53e9c156bd2125f4771db0",
+  "evaluator_record_sha256": "610ca0a0165f62dd34d910c6bf46e40924dbcc7d928fae0c9ee57e97a8d13524"
+}

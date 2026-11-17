@@ -1,0 +1,10 @@
+[Unit]
+Description=HHL P1 isolated research socket (temporary review only)
+[Socket]
+ListenStream=/run/hhl-task2/p1-review-research.sock
+SocketUser=root
+SocketGroup=hhl-agent
+SocketMode=0660
+DirectoryMode=0755
+Service=hhl-p1-review-research.service
+RemoveOnStop=yes

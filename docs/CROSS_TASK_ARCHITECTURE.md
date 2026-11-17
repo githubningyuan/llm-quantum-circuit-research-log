@@ -1,0 +1,7 @@
+# Cross-task architecture
+
+The task interface is a native `grader.py` and `contract.json` with a candidate `build()` that returns a Builder and registers. The shared substrate emits and scores op streams; T*Q is defined consistently. Task identifiers are `hhl-angle` and `coulomb-potential`; this follows native evaluator paths. Each task has separate candidates, archives, task contract, source hashes and execution history. Shared tools read the result schema without cross-contaminating archive state. New tasks should add their own task folder/contract/grader, not reuse someone else's candidate IDs. The `reproduce.py` script is a two-task best-circuit replay, not a generalized paid search engine.
+
+Coulomb: production DB79, control DB88, treatment DB117. Selective inspiration is one primary parent plus optional reference; no forced recombination. See `implementation/sidecar/` and the actual control/treatment source.
+
+HHL: independent Gen0 families A and B, both through Gen4; P11 selects family parents, retrieves research memory and optional structurally different reference. Earlier D/E seed preserved as history. See `implementation/deployment_sources/` for the actual controller implementation, rather than recreating its logic. The native substrate and research pattern were reused across tasks; numerical circuit families remain task-specific. No claim of a unified automated multi-task scheduler or proven causal transfer.

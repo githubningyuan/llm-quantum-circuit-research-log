@@ -1,0 +1,205 @@
+{
+  "schema": "coulomb-research-memory-v1",
+  "created_from": "coulomb_research_audit_20261101T092158Z.zip",
+  "archive_generated_at_utc": "2026-11-01T09:21:59.303119+00:00",
+  "data_scope": {
+    "sessions": 39,
+    "batches": 10,
+    "archived_valid_snapshots_count": 200,
+    "other_or_invalid_snapshot_count": 72,
+    "audited_source_circuits": 7,
+    "entire_DB79_exported": false,
+    "full_failure_transcripts_exported": false,
+    "source_regraded_in_this_analysis": false
+  },
+  "summary": {
+    "first_run": "20261025T140235Z-f262d3aa5b",
+    "last_run": "20261101T080533Z-922b50fa96",
+    "status_counts": {
+      "completed": 2,
+      "failed": 4,
+      "model_timeout_with_verified_offspring": 22,
+      "model_timeout_no_new_offspring": 7,
+      "opencode_failed": 1,
+      "model_length_unfinished": 1,
+      "interrupted": 2
+    },
+    "returned_offspring_records": 50,
+    "distinct_returned_offspring": 50,
+    "restored_original_sessions": 39,
+    "best_sha256": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b",
+    "best_TQ": 348775,
+    "baseline_TQ": 1601460,
+    "improvement_factor": 4.59167,
+    "archive_best_events": [
+      {
+        "batch": "20261026T113426Z-a45825a9",
+        "round": 2,
+        "best_before": 577700.0,
+        "best_after": 559493.0
+      },
+      {
+        "batch": "20261026T182234Z-cb0fb77a",
+        "round": 2,
+        "best_before": 450385.0,
+        "best_after": 420865.0
+      },
+      {
+        "batch": "20261101T050359Z-b77bbd60",
+        "round": 1,
+        "best_before": 420865.0,
+        "best_after": 348775.0
+      }
+    ]
+  },
+  "representative_circuits": [
+    {
+      "label": "protected_worktree_680430",
+      "sha256": "d242f66d35d7fc8b78dfe5a1e76178ca155f6c575df78e1e53ed5062d7157625",
+      "toffoli": 3065,
+      "qubits": 222,
+      "tq_cost": 680430
+    },
+    {
+      "label": "db17_best_577700",
+      "sha256": "404581820f42e015e9b86e68c02301916f30b519dc1f303bd597315df97bc847",
+      "toffoli": 2725,
+      "qubits": 212,
+      "tq_cost": 577700
+    },
+    {
+      "label": "db26_best_559493",
+      "sha256": "3027c91b035e6b67b4a1dd67f862d2b15b713448992a453b460cf4c4491a9bc7",
+      "toffoli": 2677,
+      "qubits": 209,
+      "tq_cost": 559493
+    },
+    {
+      "label": "db35_best_450385",
+      "sha256": "c2acc5df0a0efe8ca6557715aeb0bd96dc47c9e837e6593e927a026e4e53c5e6",
+      "toffoli": 2197,
+      "qubits": 205,
+      "tq_cost": 450385
+    },
+    {
+      "label": "db71_best_420865",
+      "sha256": "44cc82ac79972d7e8fd80f0b3f8c7af24dc0ce6cb261cca55d795a80682d38b2",
+      "toffoli": 2053,
+      "qubits": 205,
+      "tq_cost": 420865
+    },
+    {
+      "label": "latest_parent_423735",
+      "sha256": "7389122e088dc7a2bca2d352390b3e1bc4ce08e631854400f7e1df724c741ef9",
+      "toffoli": 2173,
+      "qubits": 195,
+      "tq_cost": 423735
+    },
+    {
+      "label": "db79_best_348775",
+      "sha256": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b",
+      "toffoli": 1993,
+      "qubits": 175,
+      "tq_cost": 348775
+    }
+  ],
+  "notes": [
+    {
+      "id": "N01",
+      "title": "精度與暫存器寬度協同縮減",
+      "observation": "已驗證的 423735→348775 子代：T 2173→1993，Q 195→175，TQ 降低 17.6903%；程式差異包括 INDEX_BITS 7→6、normalize 的 M 分配由 FRAC_BITS 改為 MAN_BITS，累加器由 gidney_add 換成 add。",
+      "hypothesis": "減少索引精度及算術暫存寬度可能共同降低成本；各修改的獨立因果貢獻尚未經消融驗證。",
+      "evidence": {
+        "parent_sha256": "7389122e088dc7a2bca2d352390b3e1bc4ce08e631854400f7e1df724c741ef9",
+        "child_sha256": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b",
+        "parent_T": 2173,
+        "parent_Q": 195,
+        "parent_TQ": 423735,
+        "child_T": 1993,
+        "child_Q": 175,
+        "child_TQ": 348775,
+        "tq_reduction_pct": 17.6903
+      },
+      "interpretation_confidence": "verified metrics and code diff; causal claim untested",
+      "verification_rule": "Only archived valid snapshots / recorded parent-child edges; no circuit re-execution"
+    },
+    {
+      "id": "N02",
+      "title": "原位正規化分支",
+      "observation": "已驗證的 450385→420865 子代：T 2197→2053，Q 保持 205；原始碼增加 shift_left() 及依 exponent flags 進行受控原位位移，替代分配 M 暫存器的 normalize 實作。",
+      "hypothesis": "原位 normalize 可能在某些位寬條件下有利；與其他家族的相容性未驗證。",
+      "evidence": {
+        "parent_sha256": "c2acc5df0a0efe8ca6557715aeb0bd96dc47c9e837e6593e927a026e4e53c5e6",
+        "child_sha256": "44cc82ac79972d7e8fd80f0b3f8c7af24dc0ce6cb261cca55d795a80682d38b2",
+        "parent_T": 2197,
+        "parent_Q": 205,
+        "parent_TQ": 450385,
+        "child_T": 2053,
+        "child_Q": 205,
+        "child_TQ": 420865,
+        "tq_reduction_pct": 6.5544
+      },
+      "interpretation_confidence": "verified metrics and code diff; causal claim untested",
+      "verification_rule": "Only archived valid snapshots / recorded parent-child edges; no circuit re-execution"
+    },
+    {
+      "id": "N03",
+      "title": "同一輪可產生多個可驗證子代",
+      "observation": "最新第 1 輪從 Parent 423735 保存 3 個子代，TQ 分別為 408524、380081、348775。",
+      "hypothesis": "一次 Session 內迭代修改與工具回饋可能比只保留最後結果更有效，但目前沒有消融對照。",
+      "evidence": {
+        "session": "20261101T050400Z-8a6b3f5ae2",
+        "parent_sha256": "7389122e088dc7a2bca2d352390b3e1bc4ce08e631854400f7e1df724c741ef9",
+        "offspring_TQ": [
+          408524,
+          380081,
+          348775
+        ]
+      },
+      "interpretation_confidence": "recorded session summary",
+      "verification_rule": "Only archived valid snapshots / recorded parent-child edges; no circuit re-execution"
+    },
+    {
+      "id": "N04",
+      "title": "Timeout 快照救援仍有效",
+      "observation": "39 Session 摘要中 22 次 model_timeout_with_verified_offspring、7 次 model_timeout_no_new_offspring；此數據只能顯示保存結果，不代表模型原本能完成任務。",
+      "hypothesis": "保留已驗證快照可避免 Timeout 導致全部成果遺失；需另以執行成本與可驗證新增數衡量效率。",
+      "evidence": {
+        "status_counts": {
+          "completed": 2,
+          "failed": 4,
+          "model_timeout_with_verified_offspring": 22,
+          "model_timeout_no_new_offspring": 7,
+          "opencode_failed": 1,
+          "model_length_unfinished": 1,
+          "interrupted": 2
+        }
+      },
+      "interpretation_confidence": "archived summaries",
+      "verification_rule": "Only archived valid snapshots / recorded parent-child edges; no circuit re-execution"
+    },
+    {
+      "id": "N05",
+      "title": "同一任務內保留不同算術結構",
+      "observation": "保留的代表原始碼包含使用 carry-save/unsigned_mul_rows/shift_left 的 420865 分支，也包含不同 normalize 與加法器設計的 348775 分支；七份程式不能代表完整 DB79。",
+      "hypothesis": "這些結構可能存在可交換的技巧，亦可能互不相容；需要獨立驗證後才可稱為知識轉移。",
+      "evidence": {
+        "examples": [
+          "c2acc5df0a0efe8ca6557715aeb0bd96dc47c9e837e6593e927a026e4e53c5e6",
+          "44cc82ac79972d7e8fd80f0b3f8c7af24dc0ce6cb261cca55d795a80682d38b2",
+          "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b"
+        ],
+        "audited_source_count": 7
+      },
+      "interpretation_confidence": "source-visible features, family unproven",
+      "verification_rule": "Only archived valid snapshots / recorded parent-child edges; no circuit re-execution"
+    }
+  ],
+  "gaps": [
+    "No complete 79-program DB or archived source for each offspring",
+    "No full OpenCode tool-error transcripts; cannot produce reliable failure taxonomy",
+    "Parent-child edges before seed ingestion often missing",
+    "No isolated ablation tests to attribute T/Q gains to individual code changes"
+  ],
+  "policy": "Never promote hypotheses to facts; every proposed transfer must be independently validated."
+}

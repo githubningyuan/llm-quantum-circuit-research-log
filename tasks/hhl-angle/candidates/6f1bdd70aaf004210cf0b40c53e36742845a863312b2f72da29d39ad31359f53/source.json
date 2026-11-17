@@ -1,0 +1,35 @@
+{
+  "entry": "runs/hhl-20261116-p9-8b2f1b94/attempt-01/main.py",
+  "bundle_sha256": "6f1bdd70aaf004210cf0b40c53e36742845a863312b2f72da29d39ad31359f53",
+  "files": {
+    "hhl-uncompute-author.zip": {
+      "file": "../../provenance/hhl-uncompute-author.zip",
+      "sha256": "6c88be7b3d63b5fae662ec258b984266cb466c715bbf33544ea41f63a184b28f"
+    },
+    "runs/hhl-20261116-p9-8b2f1b94/attempt-01/circuit.py": {
+      "file": "circuit.py",
+      "sha256": "fdcadb73ee916f6490407d8ca2f1072c95fcd805886fccc0f3df89c76f6c0e56"
+    },
+    "runs/hhl-20261116-p9-8b2f1b94/attempt-01/constants.json": {
+      "file": "constants.json",
+      "sha256": "ca3d163bab055381827226140568f3bef7eaac187cebd76878e0b63e9e442356"
+    },
+    "runs/hhl-20261116-p9-8b2f1b94/attempt-01/contract.json": {
+      "file": "contract.json",
+      "sha256": "7a26017e2f3a48d21007990f9bd215ce1d238c4b4147e00eb4826337b9795ffb"
+    },
+    "runs/hhl-20261116-p9-8b2f1b94/attempt-01/grader.py": {
+      "file": "grader.py",
+      "sha256": "10ea83037889414c59ab0d406f317b989fe1f4da9a69c2a52de918aff15dc50f"
+    },
+    "runs/hhl-20261116-p9-8b2f1b94/attempt-01/main.py": {
+      "file": "main.py",
+      "sha256": "705d838f3b7079fa4f7955197bb86f3fa111e151cdb2aeaffba3d2c2811290a3"
+    },
+    "runs/hhl-20261116-p9-8b2f1b94/attempt-01/meta.json": {
+      "file": "meta.json",
+      "sha256": "833805113bd038cd6b82fa5d434ec67e3468b33e33aa26cc8763baf63fed2cbf"
+    }
+  },
+  "bundle_domain_hex": "48484c5f42524f4b45525f45584543555445445f494e5055545f42554e444c455f563100"
+}

@@ -1,13 +1,5 @@
-# Sources and attribution
+# References
 
-The original research, benchmark circuit definition, baselines, and reference evaluator are **not original work of this independent experiment**.
-
-1. **Andi Gu, Alek H. Kemeny, Susanne F. Yelin, Mikhail D. Lukin**, *Discovering state-of-the-art quantum circuits with large language models*, arXiv:2610.22367 (2026). https://arxiv.org/abs/2610.22367
-2. **Original evaluator and benchmark software:** https://github.com/andigu/uncompute
-3. **OpenEvolve (external evolutionary search software):** https://github.com/algorithmicsuperintelligence/openevolve
-4. **OpenCode (external coding agent):** https://opencode.ai/
-5. **DeepSeek (external model provider):** https://www.deepseek.com/
-
-**Scope of contribution:** Independent construction and operation of an experimental workflow using existing public tools, and the preliminary empirical result reported on the Coulomb potential benchmark. The underlying quantum benchmark, reference evaluator, LLM technologies, and general evolutionary search concepts are credited to their respective creators.
-
-No third-party source code is redistributed in this public preview. Any future source release should separately audit permissions and attribution requirements.
+- Gu, A.; Kemeny, A. H.; Yelin, S. F.; Lukin, M. D. (2026). *Discovering state-of-the-art quantum circuits with large language models*. [arXiv:2610.22367](https://arxiv.org/abs/2610.22367).
+- [uncompute](https://github.com/andigu/uncompute). Original task definitions, circuit framework and evaluator. Coulomb VM export recorded commit `64b5a13aa249f1360846657392e6c66817b26d0f`; HHL's exported Python framework bytes match the Coulomb copy. Original upstream README and pyproject are preserved under `provenance/`.
+- [OpenEvolve](https://github.com/algorithmicsuperintelligence/openevolve), version 0.4.0 in the VM. [OpenCode](https://opencode.ai/). [DeepSeek](https://www.deepseek.com/).

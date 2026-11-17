@@ -1,0 +1,12 @@
+{
+  "valid": true,
+  "metrics": {
+    "combined_score": 3.285544882710401,
+    "valid": 1.0,
+    "toffoli": 2413.0,
+    "qubits": 202.0,
+    "tq_cost": 487426.0
+  },
+  "sha256": "7f720f625869093412dbeab28d0f446d0c050a1114de76696371b49e2bb56fb1",
+  "elapsed_s": 2.182
+}

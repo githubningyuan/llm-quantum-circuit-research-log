@@ -1,0 +1,36 @@
+[
+  {
+    "task": "hhl-angle",
+    "baseline_TQ": 4940400,
+    "paper_best_TQ": 155020,
+    "best": {
+      "id": "cd19a9327734829f04e6cf7487ca3018627031448d18285979f0b1ece47a8cd6",
+      "family": "INDEPENDENT_A",
+      "generation": 4,
+      "parent_id": "ae8c395572985d7ee53ead83a731844662fd376280b08c1f0c456a80009ab43b",
+      "T": 2839,
+      "Q": 168,
+      "TQ": 476952,
+      "source_record": "step-017",
+      "source_kind": "P11_or_R3_admitted",
+      "ops_sha256": "44a1a5839e7359fe83882521c922b5acead742738a09044d0e1b255674a059a7"
+    }
+  },
+  {
+    "task": "coulomb-potential",
+    "baseline_TQ": 1601460,
+    "paper_best_TQ": 161880,
+    "best": {
+      "archive": "treatment117",
+      "id": "76866f9835af7d633c64f40fb62329c1510068edec8142746a599cb9f0c24f68",
+      "parent_id": "3027c91b035e6b67b4a1dd67f862d2b15b713448992a453b460cf4c4491a9bc7",
+      "generation": 35,
+      "T": 1955,
+      "Q": 177,
+      "TQ": 346035,
+      "source_sha256": "76866f9835af7d633c64f40fb62329c1510068edec8142746a599cb9f0c24f68",
+      "snapshot": "20261101T191251Z-b6ae948f",
+      "provenance": "exclusive_run_window_plus_independent_regrade"
+    }
+  }
+]

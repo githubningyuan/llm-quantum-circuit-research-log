@@ -1,0 +1,50 @@
+{
+  "archives": {
+    "production79": {
+      "count": 79,
+      "best": {
+        "archive": "production79",
+        "id": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b",
+        "parent_id": "7389122e088dc7a2bca2d352390b3e1bc4ce08e631854400f7e1df724c741ef9",
+        "generation": 26,
+        "T": 1993,
+        "Q": 175,
+        "TQ": 348775,
+        "source_sha256": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b",
+        "snapshot": "20261101T051951Z-5de17af1",
+        "provenance": "exclusive_run_window_plus_independent_regrade"
+      }
+    },
+    "control88": {
+      "count": 88,
+      "best": {
+        "archive": "control88",
+        "id": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b",
+        "parent_id": "7389122e088dc7a2bca2d352390b3e1bc4ce08e631854400f7e1df724c741ef9",
+        "generation": 26,
+        "T": 1993,
+        "Q": 175,
+        "TQ": 348775,
+        "source_sha256": "df13a83794485c42d2a00728fae4aed978196db6cd49518142ce6198d916425b",
+        "snapshot": "20261101T051951Z-5de17af1",
+        "provenance": "exclusive_run_window_plus_independent_regrade"
+      }
+    },
+    "treatment117": {
+      "count": 117,
+      "best": {
+        "archive": "treatment117",
+        "id": "76866f9835af7d633c64f40fb62329c1510068edec8142746a599cb9f0c24f68",
+        "parent_id": "3027c91b035e6b67b4a1dd67f862d2b15b713448992a453b460cf4c4491a9bc7",
+        "generation": 35,
+        "T": 1955,
+        "Q": 177,
+        "TQ": 346035,
+        "source_sha256": "76866f9835af7d633c64f40fb62329c1510068edec8142746a599cb9f0c24f68",
+        "snapshot": "20261101T191251Z-b6ae948f",
+        "provenance": "exclusive_run_window_plus_independent_regrade"
+      }
+    }
+  },
+  "unique_programs": 126
+}

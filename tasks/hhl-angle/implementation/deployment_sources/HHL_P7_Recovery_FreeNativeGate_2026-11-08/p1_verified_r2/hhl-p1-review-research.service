@@ -1,0 +1,28 @@
+[Unit]
+Description=HHL P1 isolated rootless Broker (temporary review only)
+Requires=user@995.service
+After=user@995.service
+ConditionPathIsDirectory=/run/user/995
+[Service]
+Type=simple
+User=hhl-runner
+Group=hhl-runner
+WorkingDirectory=/
+UMask=0077
+Environment=PYTHONDONTWRITEBYTECODE=1
+ExecStart=/usr/bin/python3 -I -B /run/hhl-task2/p1-review-code/broker/socket_broker.py
+Restart=no
+TimeoutStopSec=20
+KillMode=control-group
+ProtectSystem=strict
+ReadWritePaths=/srv/hhl-task2/rootless/home /srv/hhl-task2/rootless/runtime /run/user/995 /srv/hhl-task2/p1-review-broker-spool
+InaccessiblePaths=/home /root /srv/hhl-task2/agent /srv/hhl-task2/runner
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectKernelModules=true
+ProtectKernelLogs=true
+ProtectHostname=false
+LockPersonality=true
+MemoryMax=1024M
+TasksMax=512
+LimitNOFILE=1024
